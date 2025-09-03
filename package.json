@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "openai": "^5.18.1",
+    "openrouteservice-js": "^0.4.1"
+  },
+  "name": "care-connect-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon run server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
