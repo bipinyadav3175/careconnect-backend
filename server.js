@@ -14,7 +14,13 @@ import cors from "cors"
 const app = express()
 const PORT = process.env.PORT || 5000
 
-app.use(cors());
+const corsOptions = {
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://fend-teal.vercel.app'], // Whitelist your frontend URLs
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed request headers
+  credentials: true // Allow sending cookies and authorization headers
+};
+app.use(cors(corsOptions));
 
 dbConnect()
 app.use(express.json({ limit: "8mb" }))
