@@ -7,9 +7,13 @@ import hospital from "./modals/hospital.js"
 // import dotenv from 'dotenv'
 // dotenv.config()
 
+import cors from "cors"
+
 
 const app = express()
 const PORT = process.env.PORT || 5000
+
+app.use(cors());
 
 dbConnect()
 app.use(express.json({ limit: "8mb" }))
