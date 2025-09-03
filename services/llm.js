@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: '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',
 });
 
 class llm {
