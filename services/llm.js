@@ -3,6 +3,7 @@ import OpenAI from "openai";
 
 class llm {
     async findDept(symptoms) {
+        // console.log("Api key =====> ", process.env.OPENAI_API_KEY)
         const openai = new OpenAI({
         apiKey: process.env.OPENAI_API_KEY
         });
