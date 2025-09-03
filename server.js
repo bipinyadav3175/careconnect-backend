@@ -1,11 +1,12 @@
 import express from "express"
 import router from "./routes.js"
 import dbConnect from "./dbConnect.js"
+import dotenv from "dotenv"
 import geo from "./services/geo.js"
 import mongoose from "mongoose"
 import hospital from "./modals/hospital.js"
 // import dotenv from 'dotenv'
-// dotenv.config()
+dotenv.config()
 
 import cors from "cors"
 
